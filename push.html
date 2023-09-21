@@ -1,7 +1,15 @@
 <head>
-  <title>push prod</title>
+  <title>push preprod</title>
 <<script charset="UTF-8" src="//pre.sendpulse.com/js/push/400789f96a3e2f745a582123c2e6a92a_1.js" async></script>
-  let promptItem = document.getElementsByTagName("body")[0];
+
+</head>
+
+<body>
+  <div>
+    тест
+  </div>
+  <scrypt>
+      let promptItem = document.getElementsByTagName("body")[0];
   promptItem.addEventListener("spPromptShowEvent", function(e) {
     console.info("Event: ", e);
   });
@@ -13,11 +21,5 @@
   promptItem.addEventListener("spPromptSubmitEvent", function(e) {
     console.info("Event: ", e);
   });
-</head>
-
-<body>
-  <div>
-    тест
-  </div>
-  
+  </scrypt>
 </body>
