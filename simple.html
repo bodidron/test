@@ -2,10 +2,51 @@
 <body>
 <!-- SendPulse Simple Subscription Form -->
 <form action="https://pre.sendpulse.com/forms/simple/u/eyJ1c2VyX2lkIjo3NjA1NDM1LCJhZGRyZXNzX2Jvb2tfaWQiOjg0MTU1NCwibGFuZyI6InJ1In0=" method="post">
-    <label>Имя</label>
-    <input type="text" name="name">
-    <label>Email</label>
-    <input type="email" required name="email">
+<div class="form">
+        <label class="field-label">First Name</label>
+        <input type="text" name="first_name" placeholder="Your First Name" class="text-field">
+        
+        <label class="field-label">Surname</label>
+        <input type="text" name="last_name" placeholder="Your Surname" class="text-field">
+        
+        <label class="field-label">Email</label>
+        <input type="email" required name="email" placeholder="Your Email" class="text-field">
+        
+        <div class="explanation margin-bottom margin-xsmall">
+            <div class="explanation-text">This is just for us to get an understanding, it's a bit weird sorry, but with it being such a big ask we're not sure how many people to expect, for example when we're looking at venues, and lots of other logistical things. No pressure or anything :)</div>
+        </div>
+        
+        <label class="field-label">Likelihood to Attend</label>
+        <div class="explanation-text text-size-small margin-bottom margin-small">On the scale a 1 means it is very unlikley you can make it, 5 means you're certain</div>
+        <div class="radio-fields">
+            <label class="field-label"><input type="radio" name="attendance_likelihood" value="1"> 1</label>
+            <label class="field-label"><input type="radio" name="attendance_likelihood" value="2"> 2</label>
+            <label class="field-label"><input type="radio" name="attendance_likelihood" value="3"> 3</label>
+            <label class="field-label"><input type="radio" name="attendance_likelihood" value="4"> 4</label>
+            <label class="field-label"><input type="radio" name="attendance_likelihood" value="5"> 5</label>
+        </div>
+        
+        <label class="field-label">Partner</label>
+        <input type="text" name="partner_name" placeholder="Partner's Name and Surname" class="text-field">
+        
+        <div class="children-outer-wrapper">
+            <!-- Children Information (Repeat as necessary) -->
+            <div id="children-container" class="children-inner-wrapper">
+                <label class="field-label">Children</label>
+                <input type="text" name="child_name_1" placeholder="Child's Name" class="text-field">
+            </div>
+            <button type="button" class="button-small" onclick="addMoreChildren()">Add More Children</button>
+        </div>
+        
+        <label class="field-label">Home Address</label>
+        <textarea name="home_address" placeholder="Your Home Address" class="text-field"></textarea>
+        
+        <label class="field-label">WhatsApp Phone Number</label>
+        <input type="tel" name="whatsapp_phone" placeholder="Your WhatsApp Phone Number" class="text-field">
+
+        <label class="field-label">Other Comments</label>
+        <textarea name="other_comments" placeholder="Add any other comments here" class="text-field"></textarea>
+
     <input type="hidden" name="sender" value="91b89908-37a0-426b-9056-740306e1b81d">
     <button>Subscribe</button>
 </form>
